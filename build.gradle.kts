@@ -12,9 +12,6 @@ plugins {
   alias(libs.plugins.dokka)
 }
 
-apiValidation {
-  ignoredProjects.addAll(listOf("app"))
-}
 
 subprojects {
   apply(plugin = rootProject.libs.plugins.spotless.get().pluginId)

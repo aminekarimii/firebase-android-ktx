@@ -19,6 +19,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "firebase-android-ktx-demo"
-include(":app")
 include(":firebase-database-ktx")
 include(":firebase-messaging-lifecycle-ktx")
