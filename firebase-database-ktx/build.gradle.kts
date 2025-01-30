@@ -21,19 +21,6 @@ plugins {
   id(libs.plugins.nexus.plugin.get().pluginId)
 }
 
-mavenPublishing {
-  val artifactId = "firebase-database-ktx"
-  coordinates(
-    Configuration.artifactGroup,
-    artifactId,
-    rootProject.extra.get("libVersion").toString()
-  )
-
-  pom {
-    name.set(artifactId)
-    description.set("Firebase extensions Kotlin & Compose firendly that helps you to focus on your business logic.")
-  }
-}
 
 android {
   compileSdk = Configuration.compileSdk

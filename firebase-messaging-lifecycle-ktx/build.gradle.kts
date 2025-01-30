@@ -21,22 +21,6 @@ plugins {
   id(libs.plugins.nexus.plugin.get().pluginId)
 }
 
-apply(from = "${rootDir}/scripts/publish-module.gradle.kts")
-
-mavenPublishing {
-  val artifactId = "firebase-messaging-lifecycle-ktx"
-  coordinates(
-    Configuration.artifactGroup,
-    artifactId,
-    rootProject.extra.get("libVersion").toString()
-  )
-
-  pom {
-    name.set(artifactId)
-    description.set("Firebase extensions Kotlin & Compose firendly that helps you to focus on your business logic.")
-  }
-}
-
 android {
   compileSdk = Configuration.compileSdk
   namespace = "com.skydoves.firebase.messaging.lifecycle.ktx"
