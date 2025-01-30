@@ -1,6 +1,5 @@
 import com.skydoves.firebase.android.ktx.Configuration
 
-apply(plugin = "com.vanniktech.maven.publish")
 
 rootProject.extra.apply {
   val snapshot = System.getenv("SNAPSHOT").toBoolean()

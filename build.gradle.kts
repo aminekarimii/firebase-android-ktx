@@ -8,7 +8,6 @@ plugins {
   alias(libs.plugins.gms.googleServices) apply false
   alias(libs.plugins.kotlin.serialization) apply false
   alias(libs.plugins.kotlin.binary.compatibility)
-  alias(libs.plugins.nexus.plugin)
   alias(libs.plugins.spotless)
   alias(libs.plugins.dokka)
 }
