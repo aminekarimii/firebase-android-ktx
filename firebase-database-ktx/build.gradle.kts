@@ -21,8 +21,6 @@ plugins {
   id(libs.plugins.nexus.plugin.get().pluginId)
 }
 
-apply(from = "${rootDir}/scripts/publish-module.gradle.kts")
-
 mavenPublishing {
   val artifactId = "firebase-database-ktx"
   coordinates(
